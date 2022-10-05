@@ -1,0 +1,226 @@
+/* MAIN SECTION */
+
+/* hero */
+.hero {
+    background-color: var(--background-color-dark);
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.overlay {
+    background-image: linear-gradient(0deg,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/general/overlay.jpg);
+    background-image: cover;
+    background-position: center;
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid var(--logo-second-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.hero__group {
+    width: 696px;
+    text-align: center;
+}
+
+.hero__conteiner {
+    display: flex;
+    justify-content: center;
+}
+
+.hero__title {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: calc(60 / 44);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--second-text-light-color);
+}
+
+.hero__btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 32px;
+    background-color: var(--brand-color-main);
+    border-radius: 4px;
+    border: none;
+    font-weight: 700;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+    color: var(--light-text-color);
+}
+
+/* pros - section-2 */
+.pros {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.pros__list {
+    display: flex;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.pros__item {
+    width: calc((100% - 3 * 30px) / 4);
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.pros__icon-conteiner {
+    background-color: var(--background-color-light);
+    height: 120px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pros__icon {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.pros__subtitle {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.pros__desc {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* about - section-3 */
+.about {
+    padding-bottom: 94px;
+}
+
+.about__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: calc(42 / 36);
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+.about__item {
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+}
+
+/* team-section - section-4 */
+.team {
+    background-color: var(--background-color-light);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.team__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: calc(42 / 36);
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.team__list {
+    display: flex;
+    padding-left: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* clients-section */
+.clients-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.clients-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: calc(42 / 36);
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding-left: 0;
+}
+
+.clients-list {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+
+
+.client-item {
+    width: calc((100% - 30px * 5) / 6);
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.client-link {
+    border-radius: 4px;
+    border: 1px solid var(--socials-icon-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+    /*  властивості переходу  */
+    transition-property: border;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+
+    .client-item:hover &,
+    .client-link:focus &,
+    .client-item:active & {
+        border: 1px solid var(--brand-color-main);
+    }
+}
+
+.client-icon {
+    fill: var(--socials-icon-color);
+    /*  властивості переходу  */
+    transition-property: fill;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+
+    .client-item:hover &,
+    .client-link:focus &,
+    .client-item:active & {
+        fill: var(--brand-color-main);
+    }
+}
+

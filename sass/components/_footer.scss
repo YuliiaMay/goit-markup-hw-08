@@ -1,0 +1,136 @@
+/* FOOTER */
+
+.footer {
+    background-color: var(--background-color-dark);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__conteiner {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__group {
+    margin-right: 70px;
+}
+
+.contacts {
+    margin-top: 20px;
+}
+
+.contacts__list {
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    &:first-child {
+        color: var(--light-text-color);
+    }
+}
+
+.contacts__link {
+    text-decoration: none;
+    font-style: normal;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    /*  властивості переходу  */
+    transition-property: color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: var(--brand-color-main);
+    }
+}
+
+.contacts__item {
+    &:not(:first-child) {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 9px;
+    }
+}
+
+.footer__invite {
+    width: 206px;
+    height: 80px;
+    margin-right: auto;
+}
+
+.footer__subtitle,
+.subscribe__subtitle {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: var(--light-text-color);
+    text-transform: uppercase;
+}
+
+/* footer-form - 3 section */
+.subscribe__form {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.subscribe__label {
+    display: flex;
+    flex-direction: column;
+    margin-right: 12px;
+}
+
+.subscribe__input {
+    height: 50px;
+    width: 358px;
+    padding-left: 16px;
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.6);
+    outline: transparent;
+    /*  властивості переходу  */
+    transition-property: box-shadow, border;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+
+    &:focus {
+        border: 1px solid var(--brand-color-main);
+    }
+
+}
+
+.subscribe__btn {
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 200px;
+    background-color: var(--brand-color-main);
+    border-radius: 4px;
+    border: none;
+}
+
+.subscribe__btn-text {
+    font-weight: 700;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+    color: var(--light-text-color);
+    margin-right: 10px;
+}
+
+.subscribe__btn-icon {
+    fill: var(--light-text-color);
+}

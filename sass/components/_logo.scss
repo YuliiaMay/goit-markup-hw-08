@@ -1,0 +1,23 @@
+/* logo */
+.logo {
+    font-family: var(--logo-font);
+    font-size: 26px;
+    font-weight: 700;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    color: var(--brand-color-main);
+
+    .nav & {
+        padding-top: 26px;
+        padding-bottom: 23px;
+    }
+}
+
+.logo__dark {
+    color: var(--logo-second-color);
+}
+
+.logo__light {
+    color: var(--light-text-color);
+}
+
