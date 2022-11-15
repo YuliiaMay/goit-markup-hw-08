@@ -157,7 +157,7 @@ color: var(--brand-color-main);
     &:not(:last-child) {
         margin-right: 10px;
         padding-right: 10px;
-        border: 1px solid var(--brand-color-main);
+        border-right: 1px solid var(--brand-color-main);
     }
 }
 
