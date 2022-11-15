@@ -145,18 +145,19 @@ color: var(--brand-color-main);
 .menu-container__socials {
     display: flex;
     flex-wrap: wrap;
-    background-color: aquamarine;
+    row-gap: 10px;
     font-size: 18px;
     font-weight: 500;
     line-height: calc(22 / 18);
     letter-spacing: 0.02em;
     color: var(--brand-color-main);
-    color: blue;
 }
 
 .menu-container__item-socials {
     &:not(:last-child) {
-        margin-right: 20px;
+        margin-right: 10px;
+        padding-right: 10px;
+        border: 1px solid var(--brand-color-main);
     }
 }
 
